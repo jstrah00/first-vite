@@ -1,6 +1,5 @@
 import './App.css'
 import { ThemeProvider } from "@/components/theme-provider"
-import { ModeToggle } from "@/components/mode-toggle"
 import { Layout } from "@/components/layout"
 import { SidebarTrigger } from "@/components/ui/sidebar"
 import { Toaster } from "@/components/ui/sonner"
@@ -14,7 +13,7 @@ import { Slack } from "@/pages/integrations/slack"
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <Toaster />
       <Layout>
           <SidebarTrigger />
